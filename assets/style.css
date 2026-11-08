@@ -1,0 +1,27 @@
+@font-face{font-family:"Bricolage Text";src:url("/assets/fonts/BricolageText-400.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Bricolage Text";src:url("/assets/fonts/BricolageText-600.ttf") format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"Bricolage Display";src:url("/assets/fonts/BricolageDisplay-800.ttf") format("truetype");font-weight:800;font-display:swap}
+:root{--paper:#f4ede1;--card:#fffcf7;--ink:#2f2a26;--muted:#6b625a;--fox:#8c3a2b;--line:#e6dccc;--cream:#fbf3e4}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Bricolage Text",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.6}
+main{max-width:760px;margin:0 auto;padding:40px 16px 24px}
+.card{background:var(--card);border-radius:18px;padding:32px 28px;box-shadow:0 8px 30px rgba(47,42,38,.08)}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;margin-bottom:18px}
+.brand img{width:56px;height:56px;border-radius:50%}
+.brand span{font-family:"Bricolage Display",sans-serif;font-weight:800;font-size:22px;color:var(--fox)}
+h1{font-family:"Bricolage Display",sans-serif;font-weight:800;color:var(--fox);font-size:34px;line-height:1.15;margin:0 0 14px}
+h2{font-size:20px;font-weight:600;margin:28px 0 8px}
+p,li{margin:0 0 12px}
+ul{padding-left:22px}
+a{color:var(--fox)}
+.lead{font-size:19px}
+.hero{text-align:center}
+.hero img{width:132px;height:132px;border-radius:50%;margin:8px auto 18px;display:block}
+.button{display:inline-block;background:var(--fox);color:var(--cream);padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:600;margin-top:8px}
+.button:hover{filter:brightness(1.08)}
+.muted{color:var(--muted);font-size:15px}
+address{font-style:normal}
+footer{text-align:center;padding:8px 16px 40px;font-size:15px;color:var(--muted)}
+footer a{color:var(--muted);margin:0 8px}
+@media (max-width:520px){.card{padding:24px 18px}h1{font-size:28px}}
